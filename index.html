@@ -8,10 +8,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div class="header">
+        <img src="https://drive.google.com/file/d/1rqFbgtnfV5w0iDYkI-FlLYbIhT2wsQgM/view?usp=sharing" alt="Image description">
+        <div id="menu">&#9776;</div>
+        <div id="score"> Score 10</div>
+        <div id="player" class="player">John Doe</div>
+        <img class="profile player" src="./img/profile.png">
+        <div class="player">Player:</div>
+    </div>
+    <div>
+        <div class="menu-panel">
+            <div class="menu-item" id="new-game">New Game</div>
+            <div class="menu-item" id="easy">Open game</div>
+            <div class="menu-item" id="medium">Save Game</div>
+            <div class="menu-item" id="hard">Hint</div>
+            <div class="menu-item" id="logout">Quit</div>
+        </div>
     <div class="solitaire-container">
         <div class="top-row">
-            <div class="stock"></div>
-            <div class="waste"></div>
+            <div id="stock" class="stock"></div>
+            <div id="waste" class="waste"></div>
             <div class="foundation">
                 <div class="foundation-slot"></div>
                 <div class="foundation-slot"></div>
@@ -20,16 +36,22 @@
             </div>
         </div>
         <div class="tableau">
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
+            <div id="column-1" class="column"></div>
+            <div id="column-2" class="column"></div>
+            <div id="column-3" class="column"></div>
+            <div id="column-4" class="column"></div>
+            <div id="column-5" class="column"></div>
+            <div id="column-6" class="column"></div>
+            <div id="column-7" class="column"></div>
         </div>
     </div>
-
+    </div>
+    <div class="footer">
+        <div class="time">Time: <span id="time">10:00</span></div>
+        <div class="level">Level: <span id="level">Easy</span></div>
+   
+       
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
